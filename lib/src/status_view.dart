@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class StatusView extends StatelessWidget {
@@ -45,7 +46,7 @@ class StatusView extends StatelessWidget {
           ),
           CircleAvatar(
             radius: radius - padding,
-            backgroundImage: NetworkImage(centerImageUrl),
+            backgroundImage: CachedNetworkImageProvider(centerImageUrl),
           ),
         ],
       ),
